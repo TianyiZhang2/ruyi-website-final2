@@ -1,0 +1,70 @@
+
+.pricing {
+  /*background-color: rgb(238, 242, 252);*/
+  border: 1px solid rgb(134, 152, 255);
+  padding: 24px;
+  padding-top: 0px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 30%;
+  text-align: center;
+}
+
+.pricing:first-of-type {
+  margin-right: 20px;
+}
+
+.pricing:last-of-type {
+  margin-left: 20px;
+}
+
+.pricing h2 {
+  color: #616161;
+  border-bottom: 2px solid rgb(167, 191, 247);
+  padding: 8px;
+}
+
+.pricing b {
+  font-size: 52px;
+}
+
+.footnote p {
+  font-size: 20px;
+  text-align: left;
+}
+
+@media screen and (max-width: 1080px) {
+  .pricing {
+    margin: 10px;
+    width: 50%;
+  }
+
+  .footnote p {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: block;
+  }
+
+  .pricing {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 8px;
+    width: 100%;
+  }
+
+  .pricing:first-of-type {
+    margin-right: auto;
+  }
+
+  .pricing:last-of-type {
+    margin-left: auto;
+  }
+
+  .footnote p {
+    font-size: 16px;
+  }
+}
