@@ -1,0 +1,138 @@
+/* NEW */
+body {
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 0px;
+  width: 100%;
+}
+
+/* Logo */
+.logo img {
+  margin: 16px;
+  max-width: 200px;
+  margin-top: 30px;
+  margin-left: 60px;
+}
+
+.logo a:hover {
+  opacity: 100%;
+}
+
+.text h1 {
+  color: white;
+  font-size: 60px;
+  margin-left: 120px;
+  margin-top: 10px;
+  margin-bottom: 160px;
+}
+
+/* Menu */
+.links {
+  /*margin-top: -300px;
+  margin-right: 16px;*/
+  background-color: white;
+  /*border-bottom: 3px solid rgb(134, 152, 255);*/
+  /* NEW */
+  width: 100%;
+  padding-top: 10px;
+  padding-right: 20px;
+  float: left;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact {
+  display: flex;
+}
+
+.contact a, p {
+  color: #616161;
+  display: block;
+  font-size: 20px;
+  margin: 12px 22px;
+}
+
+.navbar {
+  margin-right: 20px;
+}
+
+.navbar a {
+  color: #616161;
+  /* White bottom border prevents menu from shifting position when hovered over */
+  border-bottom: 2px solid white;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 24px;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 12px 20px;
+}
+
+.navbar a:hover {
+  color: blue;
+  border-bottom: 2px solid blue;
+  background-color: rgb(240, 240, 255);
+}
+/*
+.links img {
+  max-width: 100px;
+  margin-right: 800px;
+}*/
+
+/* Responsive menu for phones */
+@media screen and (max-width: 720px) {
+  body {
+    display: block;
+  }
+
+  .logo img {
+    margin: auto;
+    padding: 16px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 70%;
+  }
+
+  .text {
+    display: none;
+  }
+
+  .links {
+    background-color: white;
+    margin-right: auto;
+    margin-top: auto;
+    padding: 0px;
+    display: block;
+    float: none;
+  }
+
+  .contact {
+    border-bottom: 2px solid blue;
+    justify-content: space-evenly;
+  }
+
+  .contact a, p {
+    font-size: 18px;
+    margin: 12px 12px;
+  }
+
+  .navbar {
+    margin-right: 0px;
+  }
+
+  .navbar a {
+    color: #616161;
+    border-bottom: 2px solid blue;
+    float: none;
+    display: block;
+    text-align: left;
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 1080px) {
+  .text h1 {
+    font-size: 42px;
+  }
+}

@@ -1,0 +1,76 @@
+.container2 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.title {
+  text-align: center;
+}
+
+.image {
+  margin: 10px;
+  width: 50%;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.infobox,
+.services {
+  /*background-color: rgb(234, 240, 253);*/
+  margin: 10px;
+  padding: 24px;
+  /* Prevent div from stretching vertically */
+  align-self: flex-start;
+  border-left: 3px solid rgb(134, 152, 255);
+  border-right: 3px solid rgb(134, 152, 255);
+}
+
+.infobox {
+  width: 50%;
+  text-align: center;
+}
+
+.services {
+  width: 60%;
+}
+
+.services h2 {
+  text-align: center;
+}
+
+.services ol {
+  text-align: left;
+  list-style-type: disc;
+}
+
+.services li {
+  padding-bottom: 10px;
+}
+
+/*
+.services li::before {
+  content: "\2605";
+  margin: 0 8px;
+}*/
+
+/*@media screen and (max-width: 720px) {*/
+@media screen and (max-width: 1080px) {
+  .container, .container2 {
+    display: block;
+  }
+
+  .image,
+  .infobox,
+  .services {
+    width: 100%;
+    margin: 10px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+  }
+
+  /*p {
+    text-align: justify;
+  }*/
+}
